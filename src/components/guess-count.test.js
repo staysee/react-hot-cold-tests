@@ -1,10 +1,10 @@
-import Enzyme from 'enzyme';
-import Adapter from 'enzyme-adapter-react-16';
+import React from 'react';
+import {shallow} from 'enzyme';
 
-Enzyme.configure({adapter: new Adapter()});
+import GuessCount from './guess-count';
 
 describe('<GuessCount />', () => {
     it ('Renders without crashing', () => {
         shallow(<GuessCount />);
-    });
+    })
 })

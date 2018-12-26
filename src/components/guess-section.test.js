@@ -1,10 +1,10 @@
-import Enzyme from 'enzyme';
-import Adapter from 'enzyme-adapter-react-16';
+import React from 'react';
+import {shallow} from 'enzyme';
 
-Enzyme.configure({adapter: new Adapter()});
+import GuessSection from './guess-section';
 
 describe('<GuessSection />', () => {
     it ('Render without crashing', () => {
         shallow(<GuessSection />);
-    })''
+    })
 })

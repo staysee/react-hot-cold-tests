@@ -1,11 +1,10 @@
-import Enzyme from 'enzyme';
-import Adapter from 'enzyme-adapter-react-16';
-import { isMainThread } from 'worker_threads';
+import React from 'react';
+import {shallow} from 'enzyme';
 
-Enzyme.configure({adapter: new Adapter()});
+import Game from './game';
 
 describe('<Game />', () => {
     it ('Renders without crashing', () => {
         shallow(<Game />);
-    });
+    })
 })

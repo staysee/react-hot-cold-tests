@@ -1,10 +1,10 @@
-import Enzyme from 'enzyme';
-import Adapter from 'enzyme-adapter-react-16';
+import React from 'react';
+import {shallow} from 'enzyme';
 
-Enzyme.configure({adapter: new Adapter()});
+import InfoSection from './info-section';
 
 describe('<InfoSection />', () => {
     it ('Renders without crashing', () => {
-        shallow(<InfoSection />;)
-    });
+        shallow(<InfoSection />);
+    })
 })

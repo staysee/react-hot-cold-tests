@@ -1,10 +1,10 @@
-import Enzyme from 'enzyme';
-import Adapter from 'enzyme-adapter-react-16';
+import React from 'react';
+import {shallow} from 'enzyme';
 
-Enzyme.configure({adapter: new Adapter()});
+import GuessList from './guess-list';
 
 describe('GuessList', () => {
     it ('Renders without crashing', () => {
-        shallow(<GuessList />);
-    });
+        shallow(<GuessList guesses={[]}/>);
+    })
 })
